@@ -1,0 +1,39 @@
+Transcrição dos post-its
+
+Imagem 1 — image(4).png
+- Notificação de oferta em comercio das estações. OK
+- Sugerir rotas alternativas em tempo real, se a rota atual for afetada. OK
+- Notificação de ofertas enquanto aguarda se normalização. OK
+
+Imagem 2 — image(3).png
+- Ele pré-carrega informações da rota durante períodos de conexão de redes. OK
+
+Imagem 3 — image(2).png
+- Monitoramento de ônibus com elevador quebrado. OK
+
+Imagem 4 — image(1).png
+- Recarga de todos os tipos de cartões de transporte. OK
+
+Imagem 5 — image(10).png
+- Mostrar melhores rotas e horários para o trajeto. OK
+- Mandar notificações de como está o transporte em um horário agendado. OK
+
+Imagem 6 — image(9).png
+- Gerar orientações quanto à navegação dentro da estação. Opções de áudio. OK
+- 
+
+Imagem 7 — image(8).png
+- Opções de consulta de notícias compartilhando sobre o trajeto. Exemplo: ônibus batou na rua. OK
+- 
+
+Imagem 8 — image(7).png
+- Monitoramento plataforma de transporte por trilhos. OK
+- Mandar notificação se está chovendo no destino final. OK
+- Mandar um alerta de que a estação/terminal de embarque ou desembarque está ficando lotado. OK
+
+Imagem 9 — image(6).png
+- Monitoramento das plataformas rodoviário com ar condicionado. OK
+- O usuário notifica sobre ocorrências dentro da sua viagem. OK
+
+Imagem 10 — image(5).png
+- Manda um alerta que você está passando por um comércio que você deseja passar para não esquecer. OK

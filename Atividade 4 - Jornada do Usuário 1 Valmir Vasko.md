@@ -1,0 +1,7 @@
+# Jornada do Usuário — Valmir Vasko
+
+| Dimensão | Entrada | Engajamento | Evasão |
+|---|---|---|---|
+| **Ações e decisões** | • Checa o noticiário na TV. (**amarelo**)<br>• Checa o noticiário no rádio. (**amarelo**) | • Escolhe o mesmo caminho que já conhece. (**amarelo**)<br>• Informa ao gestor que irá chegar atrasado. (**vermelho**) | • Chega no destino cansado. (**vermelho**)<br>• Chega no destino atrasado. (**vermelho**) |
+| **Pensamentos e emoções** | • “O que está acontecendo na cidade?” (**amarelo**)<br>• Ansiedade/Raiva (**vermelho**)<br>• “O que está acontecendo no meu trajeto?” (**amarelo**)<br>• Ansiedade (**vermelho**) | • “Melhor não arriscar” — Conforto. (**amarelo**)<br>• “Vou perder meu emprego” — MEDO. (**vermelho**) | • “Estou acabado e o dia nem começou. Quando eu me aposento?” — Exaustão. (**vermelho**)<br>• “Estou chegando atrasado direto no meu trabalho e se me mandarem embora” — DESESPERO. (**vermelho**) |
+| **Dores e oportunidades** | • Trazer informações sobre a cidade. (**verde**)<br>• Receber informações de intercorrências de um trajeto. (**verde**) | • Memorizar os caminhos preferidos. (**verde**)<br>• Informar a situação do caminho preferido. (**verde**)<br>• Ter previsibilidade do horário de chegada. (**verde**) | • Sugerir trajetos mais confortáveis. (**verde**)<br>• Sugerir trajetos mais rápidos no tempo total e considerando gargalos. (**verde**) |

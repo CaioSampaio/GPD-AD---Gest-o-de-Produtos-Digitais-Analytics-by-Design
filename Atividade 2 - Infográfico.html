@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infográfico Interativo - Benchmark Transporte SP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen p-6 font-sans">
+  <div class="max-w-7xl mx-auto space-y-6">
+    
+    <!-- Cabeçalho -->
+    <header class="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <div>
+        <h1 class="text-2xl font-bold text-indigo-400">Análise do Mercado de Mobilidade & Conforto</h1>
+        <p class="text-slate-400 text-sm">Região Metropolitana de São Paulo — Benchmark de Competidores e Oportunidades</p>
+      </div>
+      <div class="bg-indigo-950 border border-indigo-700 px-4 py-2 rounded-lg text-center">
+        <span class="block text-xs text-indigo-300 font-semibold uppercase">Diferencial Único</span>
+        <span class="text-sm font-bold text-white">Algoritmo Orientado ao Conforto</span>
+      </div>
+    </header>
+
+    <!-- Cards de Métricas Chave -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+        <p class="text-slate-400 text-xs uppercase font-medium">Tempo Médio no Transporte (SP)</p>
+        <p class="text-3xl font-extrabold text-amber-400 mt-1">2h 47m</p>
+        <p class="text-slate-500 text-xs mt-1">por morador/dia na RMSP</p>
+      </div>
+      <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+        <p class="text-slate-400 text-xs uppercase font-medium">Priorizam Baixa Lotação</p>
+        <p class="text-3xl font-extrabold text-emerald-400 mt-1">36,4%</p>
+        <p class="text-slate-500 text-xs mt-1">dos passageiros paulistas</p>
+      </div>
+      <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+        <p class="text-slate-400 text-xs uppercase font-medium">Valorizam Climatização</p>
+        <p class="text-3xl font-extrabold text-cyan-400 mt-1">42,0%</p>
+        <p class="text-slate-500 text-xs mt-1">exigem veículos refrigerados</p>
+      </div>
+      <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+        <p class="text-slate-400 text-xs uppercase font-medium">Base do App TOP (RMSP)</p>
+        <p class="text-3xl font-extrabold text-indigo-400 mt-1">+10M</p>
+        <p class="text-slate-500 text-xs mt-1">cadastros e downloads</p>
+      </div>
+    </div>
+
+    <!-- Gráficos Interativos -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      
+      <!-- Gráfico 1: Atributos Decisivos -->
+      <div class="bg-slate-800 p-5 rounded-xl border border-slate-700">
+        <h2 class="text-lg font-semibold text-slate-200 mb-4">Prioridades do Passageiro na Jornada (%)</h2>
+        <div class="h-64">
+          <canvas id="chartPrioridades"></canvas>
+        </div>
+      </div>
+
+      <!-- Gráfico 2: Presença de Recursos nos Concorrentes -->
+      <div class="bg-slate-800 p-5 rounded-xl border border-slate-700">
+        <h2 class="text-lg font-semibold text-slate-200 mb-4">Cobertura de Funcionalidades por Solução</h2>
+        <div class="h-64">
+          <canvas id="chartCobertura"></canvas>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Tabela Comparativa de Funcionalidades -->
+    <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 overflow-x-auto">
+      <h2 class="text-lg font-semibold text-slate-200 mb-4">Matriz Comparativa de Recursos</h2>
+      <table class="w-full text-left text-sm text-slate-300">
+        <thead class="bg-slate-900 text-slate-400 text-xs uppercase">
+          <tr>
+            <th class="p-3">Recurso / Funcionalidade</th>
+            <th class="p-3 text-indigo-400 font-bold">Nossa Solução</th>
+            <th class="p-3">Moovit</th>
+            <th class="p-3">Cittamobi</th>
+            <th class="p-3">Citymapper</th>
+            <th class="p-3">App TOP</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-700">
+          <tr>
+            <td class="p-3 font-medium">Rota mais confortável</td>
+            <td class="p-3 text-emerald-400 font-bold">✓ Sim</td>
+            <td class="p-3 text-rose-400">✕ Não</td>
+            <td class="p-3 text-rose-400">✕ Não</td>
+            <td class="p-3 text-amber-400">~ Parcial</td>
+            <td class="p-3 text-rose-400">✕ Não</td>
+          </tr>
+          <tr>
+            <td class="p-3 font-medium">Lotação da plataforma</td>
+            <td class="p-3 text-emerald-400 font-bold">✓ Sim</td>
+            <td class="p-3 text-rose-400">✕ Não</td>
+            <td class="p-3 text-rose-400">✕ Não</td>
+            <td class="p-3 text-rose-400">✕ Não</td>
+            <td class="p-3 text-rose-400">✕ Não</td>
+          </tr>
+          <tr>
+            <td class="p-3 font-medium">Lojas/Conveniências na estação</td>
+            <td class="p-3 text-emerald-400 font-bold">✓ Sim</td>
+            <td class="p-3 text-rose-400">✕ Não</td>
+            <td class="p-3 text-rose-400">✕ Não</td>
+            <td class="p-3 text-rose-400">✕ Não</td>
+            <td class="p-3 text-rose-400">✕ Não</td>
+          </tr>
+          <tr>
+            <td class="p-3 font-medium">Recarga Bilhete Único / TOP</td>
+            <td class="p-3 text-emerald-400 font-bold">✓ Sim</td>
+            <td class="p-3 text-emerald-400">✓ Sim</td>
+            <td class="p-3 text-emerald-400">✓ Sim</td>
+            <td class="p-3 text-rose-400">✕ Não</td>
+            <td class="p-3 text-emerald-400">✓ Sim</td>
+          </tr>
+          <tr>
+            <td class="p-3 font-medium">Recurso de Acessibilidade</td>
+            <td class="p-3 text-slate-400 italic">A definir</td>
+            <td class="p-3 text-emerald-400">✓ Sim</td>
+            <td class="p-3 text-emerald-400">✓ Sim</td>
+            <td class="p-3 text-emerald-400">✓ Sim</td>
+            <td class="p-3 text-amber-400">~ Parcial</td>
+          </tr>
+          <tr>
+            <td class="p-3 font-medium">Modelo de Monetização</td>
+            <td class="p-3 text-slate-400 italic">A definir</td>
+            <td class="p-3 text-xs">Ads, Premium, Data B2G</td>
+            <td class="p-3 text-xs">Ads, Premium, Qualimob</td>
+            <td class="p-3 text-xs">CLUB, Affiliates</td>
+            <td class="p-3 text-xs">Bilhetagem, FinTech</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script>
+    // Gráfico de Prioridades do Passageiro
+    const ctx1 = document.getElementById('chartPrioridades').getContext('2d');
+    new Chart(ctx1, {
+      type: 'bar',
+      data: {
+        labels: ['Pontualidade', 'Tempo de Espera', 'Climatização', 'Conservação', 'Baixa Lotação'],
+        datasets: [{
+          label: '% de Importância Citada',
+          data: [66.5, 47.5, 42.0, 37.8, 36.4],
+          backgroundColor: ['#6366f1', '#818cf8', '#22d3ee', '#34d399', '#f59e0b'],
+          borderRadius: 6
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { beginAtZero: true, grid: { color: '#334155' }, ticks: { color: '#94a3b8' } },
+          x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
+        }
+      }
+    });
+
+    // Gráfico de Cobertura das Soluções
+    const ctx2 = document.getElementById('chartCobertura').getContext('2d');
+    new Chart(ctx2, {
+      type: 'radar',
+      data: {
+        labels: ['Rotas Rápidas', 'Filtro Conforto', 'Lotação Plataforma', 'Recarga Bilhete', 'Lojas Estação', 'Acessibilidade'],
+        datasets: [
+          {
+            label: 'Nossa Solução',
+            data: [4, 5, 5, 5, 5, 2],
+            borderColor: '#34d399',
+            backgroundColor: 'rgba(52, 211, 153, 0.2)'
+          },
+          {
+            label: 'Moovit',
+            data: [5, 1, 1, 5, 1, 5],
+            borderColor: '#818cf8',
+            backgroundColor: 'rgba(129, 140, 248, 0.2)'
+          },
+          {
+            label: 'Cittamobi',
+            data: [5, 1, 1, 5, 1, 5],
+            borderColor: '#f59e0b',
+            backgroundColor: 'rgba(245, 158, 11, 0.2)'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          r: {
+            angleLines: { color: '#334155' },
+            grid: { color: '#334155' },
+            pointLabels: { color: '#94a3b8', font: { size: 10 } },
+            ticks: { display: false }
+          }
+        },
+        plugins: {
+          legend: { labels: { color: '#cbd5e1' } }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
