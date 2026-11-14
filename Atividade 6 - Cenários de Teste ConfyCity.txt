@@ -1,0 +1,279 @@
+CONFYCITY APP — ROTEIRO DE CENÁRIOS PARA TESTE DO PROTÓTIPO
+
+Objetivo
+Testar de ponta a ponta se passageiros conseguem planejar uma viagem, comparar alternativas por conforto, duração e custo, entender os limites das informações demonstrativas e acessar os demais recursos previstos no protótipo.
+
+Importante
+Este roteiro testa um protótipo navegável. Rotas, custos, tempos, lotação, ocorrências, acessibilidade, clima, comércios, fontes e horários devem ser entendidos como dados simulados. Não realizar uma viagem real com base nas informações do protótipo. Alertas e relatos não devem ser enviados nem gerar notificações reais.
+
+ORIENTAÇÕES PARA A SESSÃO
+
+1. Peça à pessoa participante que pense em voz alta e execute as tarefas sem receber instruções sobre onde clicar.
+2. Leia somente o texto de cada tarefa. Não explique o significado dos controles antes de a pessoa tentar utilizá-los.
+3. Use as opções e os dados que já estiverem disponíveis no protótipo; não invente valores ou destinos.
+4. Observe conclusão, hesitações, erros, retornos, pedidos de ajuda, interpretação dos dados e justificativa das escolhas.
+5. Ao final de cada cenário, registre o resultado como: Concluído sem ajuda / Concluído com ajuda / Não concluído / Não aplicável.
+6. Registre comentários e dificuldades com as palavras da pessoa participante.
+
+CHECAGEM GLOBAL — APLICAR EM TODAS AS TELAS
+
+Verifique durante a sessão:
+- O aviso “Protótipo — dados simulados, não representam a operação real” permanece visível e legível.
+- Dados simulados, indisponíveis ou desatualizados não são apresentados como informação atual ou operacional.
+- Textos, ícones e estados comunicam lotação, alertas e acessibilidade sem depender somente de cores.
+- A pessoa consegue identificar em que etapa está e como voltar ao planejamento.
+- Alertas e relatos deixam claro que são demonstrações locais, sem envio ou notificação real.
+
+JORNADA PRINCIPAL — DO PLANEJAMENTO À CHEGADA
+
+CENÁRIO 1 — Planejar uma viagem pela primeira vez
+Objetivo: verificar se a pessoa encontra a busca, preenche os dados e inicia o planejamento sem treinamento.
+Início: tela inicial/Planejar.
+Tarefa para a pessoa: “Você precisa planejar um deslocamento. Escolha uma origem, um destino e um horário disponíveis no protótipo e encontre opções de rota.”
+Verificar:
+- Encontra os campos de origem, destino e horário.
+- Entende o que precisa preencher e consegue iniciar a busca.
+- Percebe o aviso de dados simulados.
+- Se houver exemplos preenchidos, entende que pode usá-los ou alterá-los.
+Resultado esperado: busca válida leva à tela de resultados demonstrativos.
+
+CENÁRIO 2 — Comparar opções e escolher considerando diferentes trade-offs
+Objetivo: verificar compreensão de duração, custo, baldeações e conforto/lotação.
+Início: resultados de uma busca válida.
+Tarefa para a pessoa: “Compare as opções disponíveis e escolha a que você usaria. Conte o que pesou na sua decisão.”
+Verificar:
+- Consegue localizar e comparar duração, custo, baldeações e lotação/conforto estimados.
+- Distingue os atributos das rotas e entende que conforto/lotação é uma estimativa demonstrativa.
+- Percebe que uma rota pode ser mais rápida, barata ou confortável sem que exista uma opção universalmente melhor.
+- Consegue explicar a escolha sem interpretar a estimativa como garantia de assento ou segurança.
+
+CENÁRIO 3 — Ordenar resultados por um critério
+Objetivo: verificar se a ordenação facilita a comparação sem esconder os trade-offs.
+Início: resultados de uma busca válida.
+Tarefa para a pessoa: “Encontre primeiro uma alternativa que priorize o critério mais importante para você. Depois, veja como as opções ficam ao priorizar outro critério.”
+Verificar:
+- Localiza as opções de ordenação por menor duração, menor custo e menor lotação estimada, se disponíveis.
+- Entende qual critério está ativo e percebe a mudança na ordem.
+- Continua conseguindo comparar os demais atributos de cada rota.
+
+CENÁRIO 4 — Consultar detalhes e entender a origem dos dados
+Objetivo: verificar compreensão das etapas e transparência das estimativas.
+Início: resultados da busca.
+Tarefa para a pessoa: “Abra uma das opções e descubra como seria o trajeto e de onde vêm as informações mostradas.”
+Verificar:
+- Encontra etapas, conexões e informações comparáveis da rota.
+- Localiza a indicação de estimativa demonstrativa, fonte ilustrativa e horário de atualização fictício.
+- Não confunde fonte ou horário fictícios com dados de um operador ou atualização em tempo real.
+- Localiza as informações de acessibilidade e entende seu caráter demonstrativo.
+
+CENÁRIO 5 — Salvar uma rota e iniciar o acompanhamento
+Objetivo: verificar a seleção, o salvamento e o início do trajeto demonstrativo.
+Início: detalhes de uma rota.
+Tarefa para a pessoa: “Guarde esta opção para consultar depois e, em seguida, comece a acompanhá-la.”
+Verificar:
+- Consegue salvar a rota e recebe confirmação clara.
+- Consegue iniciar a rota sem perder a alternativa selecionada.
+- O acompanhamento apresenta a etapa atual e as próximas etapas.
+- A interface não sugere que o trajeto está sendo monitorado em tempo real.
+
+CENÁRIO 6 — Consultar uma ocorrência e manter a rota
+Objetivo: testar a decisão de não trocar de alternativa.
+Início: jornada em uma rota com ocorrência simulada.
+Tarefa para a pessoa: “Você viu um aviso sobre sua rota. Entenda o possível impacto, compare a alternativa e decida o que fazer.”
+Verificar:
+- Localiza o aviso e entende que é uma ocorrência simulada.
+- Consegue consultar e comparar a alternativa.
+- Escolhe manter a rota e encontra confirmação ou continuidade coerente.
+- A rota atual permanece selecionada; o aviso continua identificado como demonstrativo.
+
+CENÁRIO 7 — Consultar uma ocorrência e trocar de rota
+Objetivo: testar a atualização da jornada após a troca.
+Início: jornada em uma rota com ocorrência simulada.
+Tarefa para a pessoa: “Considere que prefere evitar o impacto indicado. Compare as opções e ajuste seu trajeto se achar necessário.”
+Verificar:
+- Consegue comparar a rota afetada com a alternativa.
+- Escolhe “Trocar de rota” ou ação equivalente.
+- As etapas e a rota acompanhada são atualizadas para a alternativa escolhida.
+- Fica claro que a alteração é uma demonstração, não uma instrução operacional.
+
+CENÁRIO 8 — Consultar orientação de estação e acessibilidade
+Objetivo: verificar se a pessoa encontra informações de navegação na estação.
+Início: acompanhamento de rota.
+Tarefa para a pessoa: “Descubra como seria a próxima etapa dentro da estação e consulte a informação de acessibilidade disponível.”
+Verificar:
+- Encontra a navegação esquemática e entende que não é um mapa operacional.
+- Localiza a informação de acessibilidade e sua ressalva demonstrativa.
+- Não interpreta a informação como garantia de funcionamento, disponibilidade ou condição física real.
+
+CENÁRIO 9 — Consultar clima e comércios de interesse
+Objetivo: testar acesso às informações complementares.
+Início: acompanhamento de rota ou seção correspondente.
+Tarefa para a pessoa: “Veja as informações disponíveis sobre o clima no destino e os comércios de interesse.”
+Verificar:
+- Localiza as duas informações sem perder o contexto da viagem.
+- Percebe que são dados de exemplo e não previsões ou recomendações atuais.
+- Consegue voltar à jornada principal.
+
+CENÁRIO 10 — Concluir a viagem demonstrativa
+Objetivo: verificar encerramento do fluxo principal.
+Início: acompanhamento da rota, depois de percorrer as etapas demonstrativas.
+Tarefa para a pessoa: “Continue até concluir o trajeto.”
+Verificar:
+- Entende como avançar ou concluir as etapas.
+- Reconhece a tela de chegada como encerramento da demonstração.
+- Encontra a ação para iniciar uma nova busca.
+
+JORNADAS COMPLEMENTARES E ESTADOS ALTERNATIVOS
+
+CENÁRIO 11 — Tentar buscar sem preencher campos obrigatórios
+Objetivo: testar validação e recuperação do formulário.
+Início: tela inicial/Planejar, com origem ou destino em branco.
+Tarefa para a pessoa: “Tente buscar uma rota sem preencher todos os dados e corrija o que for necessário.”
+Verificar:
+- A busca incompleta não exibe resultados como se fosse válida.
+- Campo pendente é identificado junto ao próprio campo, com orientação clara.
+- Após corrigir, a pessoa consegue prosseguir sem precisar recomeçar.
+
+CENÁRIO 12 — Buscar sem resultados
+Objetivo: testar o estado vazio.
+Início: tela de planejamento.
+Tarefa para a pessoa: “Faça uma busca que não tenha opções no conjunto demonstrativo e descubra como continuar.”
+Verificar:
+- A interface explica que não há opção no conjunto de demonstração.
+- Não apresenta uma rota inventada como resultado.
+- A pessoa encontra um caminho para editar a busca e tentar novamente.
+
+CENÁRIO 13 — Lidar com dado indisponível ou desatualizado
+Objetivo: testar transparência quando uma informação não pode ser consultada.
+Início: tela/rota com estado de dado indisponível ou desatualizado, se previsto no protótipo.
+Tarefa para a pessoa: “Verifique o que está disponível nesta rota e decida se há informação suficiente para continuar.”
+Verificar:
+- O campo indisponível ou desatualizado está identificado claramente.
+- O valor não é substituído silenciosamente por um dado sem rótulo.
+- A pessoa entende a limitação e consegue voltar ou escolher outra opção.
+Observação: se o protótipo não oferecer esse estado, registrar como não demonstrado.
+
+CENÁRIO 14 — Configurar e consultar um alerta demonstrativo
+Objetivo: testar criação e revisão de um alerta.
+Início: seção Alertas.
+Tarefa para a pessoa: “Configure um alerta para um horário e uma categoria de seu interesse. Depois, encontre o alerta que acabou de criar.”
+Verificar:
+- Consegue selecionar horário/categoria e confirmar.
+- A configuração aparece na interface para consulta.
+- A confirmação informa que é local, não foi enviada e não gerará notificação real.
+- A pessoa não espera receber um push ou alerta fora do protótipo.
+
+CENÁRIO 15 — Registrar um relato demonstrativo
+Objetivo: testar o registro local de lotação ou ocorrência.
+Início: seção de relato/colaboração.
+Tarefa para a pessoa: “Registre um relato de lotação ou ocorrência usando uma categoria disponível e confirme o que aconteceu com o relato.”
+Verificar:
+- Consegue selecionar uma categoria e confirmar o registro.
+- A confirmação deixa claro que o relato ficou apenas na demonstração e não foi transmitido.
+- Não são solicitados dados pessoais ou localização real.
+
+CENÁRIO 16 — Reabrir uma rota salva em modo offline simulado
+Objetivo: verificar consulta de rotas salvas e limites da simulação offline.
+Início: seção Rotas salvas, com uma rota previamente guardada.
+Tarefa para a pessoa: “Abra a rota que salvou e descubra quais informações consegue consultar sem conexão.”
+Verificar:
+- Encontra a rota salva e consegue reabri-la.
+- A interface informa que o modo offline é simulado.
+- Qualquer informação indisponível é identificada, sem ser substituída por um valor inventado.
+- Fica claro que a consulta offline não equivale a uma conexão ou atualização real.
+
+CENÁRIO 17 — Consultar rotas salvas sem haver nenhuma
+Objetivo: testar estado vazio de salvos.
+Início: Rotas salvas, sem trajetos guardados.
+Tarefa para a pessoa: “Procure uma rota salva e descubra como começar a guardar uma.”
+Verificar:
+- A tela explica que ainda não há rotas salvas.
+- A pessoa encontra como voltar ao planejamento ou salvar uma rota.
+Observação: se não for possível limpar os dados de demonstração para preparar o cenário, registrar como não demonstrado.
+
+CENÁRIO 18 — Simular falha de conexão e recuperar uma rota
+Objetivo: testar a comunicação de falha e a recuperação.
+Início: fluxo com falha de conexão simulada.
+Tarefa para a pessoa: “A conexão falhou durante sua consulta. Descubra o que ainda pode ser acessado e como continuar.”
+Verificar:
+- A falha é explicada sem parecer uma confirmação de sucesso.
+- A pessoa entende quais rotas salvas ainda estão disponíveis e quais informações podem faltar.
+- Consegue abrir uma rota salva ou retornar ao fluxo sem perder a busca desnecessariamente.
+Observação: não provocar uma falha de rede real; usar apenas o estado de demonstração do protótipo.
+
+CENÁRIO 19 — Voltar etapas sem perder a busca
+Objetivo: verificar recuperação e preservação do contexto.
+Início: resultados ou etapa posterior da jornada.
+Tarefa para a pessoa: “Volte para conferir ou corrigir um dado da busca e depois retome a comparação.”
+Verificar:
+- Consegue retornar ao planejamento.
+- Origem, destino e horário são preservados quando esperado ou há explicação clara se precisarem ser informados novamente.
+- Após corrigir, consegue buscar novamente e continuar sem confusão.
+
+CENÁRIO 20 — Iniciar uma nova busca após a chegada
+Objetivo: verificar o recomeço do fluxo.
+Início: tela de chegada.
+Tarefa para a pessoa: “Planeje outro deslocamento.”
+Verificar:
+- Encontra a ação para nova busca.
+- A nova jornada não fica presa aos dados da rota concluída.
+- O aviso de protótipo continua visível.
+
+USABILIDADE, ACESSIBILIDADE E RESPONSIVIDADE
+
+CENÁRIO 21 — Alternar tema claro e escuro durante a jornada
+Objetivo: testar o alternador de tema e a consistência visual.
+Início: qualquer tela; repetir em uma tela de resultados e outra de detalhes.
+Tarefa para a pessoa: “Mude a aparência do aplicativo e continue sua tarefa.”
+Verificar:
+- Encontra e opera o alternador de tema.
+- A preferência permanece ao navegar entre telas.
+- Texto, controles, foco e estados continuam legíveis e distinguíveis nos dois temas.
+- A mudança de tema não apaga a busca nem altera a rota selecionada.
+
+CENÁRIO 22 — Navegar sem depender de cor, hover ou mouse
+Objetivo: observar acessibilidade básica da interface.
+Início: tela de planejamento ou resultados.
+Tarefa para a pessoa: “Encontre uma rota e consulte seus detalhes usando o teclado, sem usar o mouse.”
+Verificar:
+- O foco é visível e segue uma ordem compreensível.
+- Campos, botões e navegação podem ser alcançados e acionados pelo teclado.
+- Rótulos textuais acompanham ícones; estados não são comunicados somente por cor.
+- Não há informação ou ação essencial disponível apenas ao passar o mouse.
+Observação: se a pessoa participante não utilizar teclado habitualmente, o moderador pode executar a checagem técnica sem avaliar seu desempenho individual.
+
+CENÁRIO 23 — Usar o protótipo em telas pequenas e maiores
+Objetivo: verificar adaptação responsiva e navegação.
+Início: Planejar; repetir em resultados e acompanhamento.
+Tarefa para a pessoa: “Use as mesmas funções em um celular e em uma tela maior, se os dispositivos estiverem disponíveis.”
+Verificar:
+- Conteúdo principal e cartões não ficam cortados ou sobrepostos.
+- Navegação inferior no mobile permite identificar Planejar, Alertas, Salvas e Mais, conforme disponíveis.
+- Em telas maiores, os mesmos destinos continuam acessíveis.
+- Alvos de toque, textos e controles permanecem utilizáveis.
+Observação: se só houver um tamanho de tela disponível, registrar o outro como não testado.
+
+PERGUNTAS FINAIS PARA A PESSOA PARTICIPANTE
+
+1. Qual rota você escolheria e por quê? O que mais pesou na decisão?
+2. O que significam as informações de conforto/lotação apresentadas? Você entendeu que eram dados simulados?
+3. Em algum momento você achou que havia informação em tempo real, garantia de assento, segurança ou acessibilidade confirmada?
+4. Qual foi a tarefa mais fácil? E a mais difícil?
+5. O que você esperava encontrar e não encontrou?
+6. Que informação ou aviso deveria ser mais claro?
+
+REGISTRO DO MODERADOR
+
+Participante/código: ______________________________________________
+Data: ____________________  Dispositivo/tamanho de tela: ____________________
+Tema usado: ____________________  Moderador: ____________________
+
+Cenário | Resultado (sem ajuda / com ajuda / não concluído / não aplicável) | Dificuldade, fala ou observação
+____________________________________________________________________________
+____________________________________________________________________________
+____________________________________________________________________________
+____________________________________________________________________________
+____________________________________________________________________________
+____________________________________________________________________________
+
+Ao encerrar, confirme com a pessoa que ela sabe que o protótipo usa dados simulados e que nenhuma rota, ocorrência, previsão, alerta ou relato foi consultado ou enviado a um serviço real.
